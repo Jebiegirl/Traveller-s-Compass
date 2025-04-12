@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Golden Hour Theme Accents */
+  .golden-gradient {
+    @apply bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500;
+  }
+  
+  .golden-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-500;
+  }
+  
+  .sunset-bg {
+    @apply bg-gradient-to-b from-amber-500/20 via-orange-300/10 to-amber-100/5;
+  }
+  
+  .hero-golden-overlay {
+    @apply bg-gradient-to-r from-amber-600/80 to-orange-500/70;
+  }
+}
